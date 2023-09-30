@@ -982,12 +982,12 @@ var contacts = [
 function lookUpProfile(name, prop){ //prop = property
     for(var i = 0; i < contacts.length; i++){
         if(contacts[i].firstName === name || contacts[i].lastName === name){ //checks if the firstName or lastName is equal to the name, then it will do the if statement.
-            return contacts[i][prop] //return the value of the property that was passed in.
-        }
+            return contacts[i][prop] || "shit"   //return the value of the property that was passed in.  
+        }  // the || shit/ or shit gives an output of "shit" if the input is not in the contacts or is spelled incorrectly.
     }
     return "No such contact."
 }
-var data = lookUpProfile("Holmes","likes");
+var data = lookUpProfile("Holmes","Likes");
 
 console.log(data);
 
