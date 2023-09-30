@@ -954,7 +954,7 @@ console.log(i,myArray224)
 
 var contacts = [
     {
-        "firstName":"Akira",
+        "firstName":"Akira", //KEY VALUE PAIRS
         "lastName": "Laine",
         "number": "0543236543",
         "likes": ["Pizza","Coding","Brownie Points"]
@@ -978,3 +978,17 @@ var contacts = [
         "likes": ["Javascipt","Gaming","Foxes"]
     }
 ];
+
+function lookUpProfile(name, prop){ //prop = property
+    for(var i = 0; i < contacts.length; i++){
+        if(contacts[i].firstName === name || contacts[i].lastName === name){ //checks if the firstName or lastName is equal to the name, then it will do the if statement.
+            return contacts[i][prop] //return the value of the property that was passed in.
+        }
+    }
+    return "No such contact."
+}
+var data = lookUpProfile("Holmes","likes");
+
+console.log(data);
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
