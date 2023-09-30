@@ -952,4 +952,29 @@ console.log(i,myArray224)
 
             //PROFILE LOOKUP
 
-            
+var contacts = [
+    {
+        "firstName":"Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza","Coding","Brownie Points"]
+    },
+    {
+        "firstName":"Harry",
+        "lastName": "Potter",
+        "number": "099437682",
+        "likes": ["Hogwarts","Magic","Hagrid"]
+    },
+    {
+        "firstName":"Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases","Violin"]
+    },
+    {
+        "firstName":"Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["Javascipt","Gaming","Foxes"]
+    }
+];
