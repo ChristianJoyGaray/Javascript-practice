@@ -1028,3 +1028,22 @@ console.log(randomWholeNumRange(1,5))
 
             //USE THE PARSEINT FUNCTION
 
+function convertToInteger(str){
+    
+    return parseInt(str);
+}
+
+console.log(convertToInteger("88"))
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE THE PARSEINT FUNCTION WITH A RADIX
+
+function convertToInteger232(str){
+    
+    return parseInt(str, 2); //convert the string 1001010 binary number to whole number
+}
+
+console.log(convertToInteger232("1001010"))
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
