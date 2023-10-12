@@ -995,3 +995,36 @@ console.log(data);
 
             //GENERATE RANDOM FRACTIONS
 
+function randomFunction() {
+
+    return Math.random() * 10;  //range of random numbers from 0 to 10
+}
+
+console.log(randomFunction());
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //GENERATE RANDOM WHOLE NUMBERS
+
+function randomWholeNumber(){
+
+    return Math.floor(Math.random() * 20)  //Math.floor = whole number
+}
+
+console.log(randomWholeNumber())
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //GENERATE RANDOM WHOLE NUMBERS WITHIN A RANGE
+
+function randomWholeNumRange(min, max){
+
+    return Math.floor(Math.random() * (max - min + 1)) + min;  //IDK how it works
+}
+
+console.log(randomWholeNumRange(1,5))
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE THE PARSEINT FUNCTION
+
