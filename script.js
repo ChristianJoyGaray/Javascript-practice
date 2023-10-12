@@ -1047,3 +1047,13 @@ function convertToInteger232(str){
 console.log(convertToInteger232("1001010"))
 
 //another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE THE CONDOTIONAL (TERNARY) OPERATOR
+
+function checkEqual(a,b){
+    return a===b ? true:false //SAME AS BELOW
+
+    return a===b; //SAME AS ABOVE
+}
+
+console.log(checkEqual(1,1));
