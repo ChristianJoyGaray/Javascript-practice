@@ -1152,6 +1152,7 @@ console.log(checkScope3());
 
 //OUTPUT WILL HAVE ERROR BECAUSE VARIABLE i IN console.log("function scope is: ", i); IS NOT DECLARED
 //BUT IF  var i = "block scope"; IS USED, THEN THE OUTPUT IS block scope
+//OUTPUT HAS 12 INSTEAD OF ERROR, TESTED IN ONLINE COMPILER "PROGRAMIZ", IT SHOULD HAVE AN ERROR
 
 //another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
