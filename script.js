@@ -1135,5 +1135,23 @@ console.log(checkScope2());
 // script.js:1127 function scope is:  function scope
 // script.js:1131 function scope
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function checkScope3(){
+    "use strict";
+        //let i = "function scope";   //IF COMMENTED
+        if (true){
+           let i = "block scope";
+            console.log("Block scope is: ", i);
+        }
+        console.log("function scope is: ", i);
+        return i;
+}
+
+console.log(checkScope3());
+
+//OUTPUT WILL HAVE ERROR BECAUSE VARIABLE i IN console.log("function scope is: ", i); IS NOT DECLARED
+//BUT IF  var i = "block scope"; IS USED, THEN THE OUTPUT IS block scope
+
 //another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
