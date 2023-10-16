@@ -1171,3 +1171,17 @@ function printManyTimes(str){
 }
 
 console.log(printManyTimes("freeCodeCamp"));
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function printManyTimes2(str){
+    "use strict";
+
+    const SENTENCEE = str + " is cool!"   //if using the keyword const then it should be in capital letters
+
+    for(let i = 0; i < str.length; i+=2){  //change from var to let
+        console.log(SENTENCEE);
+    }
+}
+
+console.log(printManyTimes2("freeCodeCamp"));
