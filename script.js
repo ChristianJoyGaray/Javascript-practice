@@ -1097,3 +1097,43 @@ console.log(checkSign(0))
 
             //COMPARE SCOPES OF THE VAR AND LET KEYWORDS
 
+function checkScope(){
+    "use strict";
+        var i = "function scope";
+        if (true){
+            i = "block scope";
+            console.log("Block scope is: ", i);
+        }
+        console.log("function scope is: ", i);
+        return i;
+}
+
+console.log(checkScope());
+
+//OUTPUT IS 
+// Block scope is:  block scope
+// script.js:1107 function scope is:  block scope
+// script.js:1111 block scope
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function checkScope2(){
+    "use strict";
+        let i = "function scope";
+        if (true){
+           let i = "block scope";
+            console.log("Block scope is: ", i);
+        }
+        console.log("function scope is: ", i);
+        return i;
+}
+
+console.log(checkScope2());
+
+// OUTPUT IS
+// Block scope is:  block scope
+// script.js:1127 function scope is:  function scope
+// script.js:1131 function scope
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
