@@ -1163,7 +1163,7 @@ function printManyTimes(str){
 
     var sentence = str + " is cool!"  //if var sentence is used then it will give an OUTPUT of freeCodeCamp is cool!
                                         //But if var is changed to const sentence then it will give an ERROR
-    sentence = str + " is awesome!"     //if const is used then it can't be assigned afterwards, that is why it gives an ERROR
+    sentence = str + " is awesome!"     //if const is used above this line of code then it can't be assigned afterwards to this code, that is why it gives an ERROR
 
     for(var i = 0; i < str.length; i+=2){
         console.log(sentence);
@@ -1185,4 +1185,6 @@ function printManyTimes2(str){
 }
 
 console.log(printManyTimes2("freeCodeCamp"));
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
