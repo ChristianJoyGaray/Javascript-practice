@@ -1161,7 +1161,7 @@ console.log(checkScope3());
 function printManyTimes(str){
     "use strict";
 
-    let sentence = str + " is cool!"
+    var sentence = str + " is cool!"
 
     sentence = str + " is awesome!"
 
