@@ -1112,8 +1112,8 @@ console.log(checkScope());
 
 //OUTPUT IS 
 // Block scope is:  block scope
-// script.js:1107 function scope is:  block scope
-// script.js:1111 block scope
+//script.js:1107 function scope is:  block scope
+//block scope
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1132,8 +1132,8 @@ console.log(checkScope2());
 
 // OUTPUT IS
 // Block scope is:  block scope
-// script.js:1127 function scope is:  function scope
-// script.js:1131 function scope
+//function scope is:  function scope
+//function scope
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1157,3 +1157,16 @@ console.log(checkScope3());
 
             //DECLARE A READ-ONLY VARIABLE WITH THE CONST KEYWORD
 
+function printManyTimes(str){
+    "use strict";
+
+    const sentence = str + " is cool!"
+
+    sentence = str + " is awesome!"
+
+    for(var i = 0; i < str.length; i+=2){
+        console.log(sentence);
+    }
+}
+
+console.log(printManyTimes("freeCodeCamp"));
