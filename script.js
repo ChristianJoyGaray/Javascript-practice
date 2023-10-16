@@ -1161,7 +1161,7 @@ console.log(checkScope3());
 function printManyTimes(str){
     "use strict";
 
-    const sentence = str + " is cool!"  //if var sentence is used then it will give an OUTPUT of freeCodeCamp is cool!
+    var sentence = str + " is cool!"  //if var sentence is used then it will give an OUTPUT of freeCodeCamp is cool!
                                         //But if var is changed to const sentence then it will give an ERROR
     sentence = str + " is awesome!"     //if const is used then it can't be assigned afterwards, that is why it gives an ERROR
 
