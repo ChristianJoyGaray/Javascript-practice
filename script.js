@@ -1083,6 +1083,15 @@ console.log(checkSign(0))
 //another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             //USING LET IN DECLARING VARIABLES WILL SHOW ERROR IF THE VARIABLE HAS BEEN DUPLICATED.
+            // "use strict"; CHATGPT: enables strict mode in your code. 
+            // It is a way to opt in to a restricted variant of JavaScript that disallows certain 
+            // error-prone features and enforces a stricter set of rules for writing code. 
+            // Error Prevention
+            // Prevents Variable Leaks
+            // Eliminates this Coercion
+            // Prohibits Octal Syntax
+            // Enhances Security
+            // Reserved Words
 
 //another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
