@@ -1298,3 +1298,46 @@ const increment = (function(){
 
 console.log(increment(5,2));
 console.log(increment(5));
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE THE REST OPERATOR WITH FUNCTION PARAMETERS
+
+// const sum = (function() {
+//     return function sum(x, y, z){
+//         const args = [x, y, z];  //made into an array
+//         return args.reduce((a, b) => a + b, 0);
+//     }
+// })();
+
+// console.log(sum(1, 2, 3)); //SAME AS BELOW
+
+const sum = (function() {  //SAME AS ABOVE
+    return function sum(...args){ //... is a REST OPERATOR, all values passed in the array will be sent to args, and args is where the array is passed in
+        return args.reduce((a, b) => a + b, 0);
+    }
+})();
+
+console.log(sum(1, 2, 3, 4));
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE THE SPREAD OPERATOR TO EVALUATE ARRAYS IN-PLACE
+
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function(){
+    arr2 = arr1; 
+    arr1[0] = 'potato'
+})();
+
+console.log(arr2);
+
+const arr12 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr22;
+(function(){
+    arr22 = [...arr12]; //... is a SPREAD OPERATOR and must be used with brackets []
+    arr12[0] = 'potato'
+})();
+
+console.log(arr22);
