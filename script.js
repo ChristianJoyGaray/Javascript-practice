@@ -1346,3 +1346,118 @@ console.log(arr22);
 
             //USE DESTRUCTURING ASSIGNMENT TO ASSIGN VARIABLES FROM OBJECTS
 
+var voxel = {x: 3.6, y: 7.4, z: 6.54};
+
+var x = voxel.x;
+var y = voxel.y;
+var z = voxel.z;
+
+const {x: a, y: b, z: c} = voxel; //QUICKER WAY OF ASSIGNING FROM OBJECTS TO VARIABLES
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const AVG_TEMPERATURES = {today: 77.5, tomorrow: 79};
+
+function getTempOfTmrw(avgTemperatures) {
+    "use strict";
+
+    const {tomorrow : tempOfTomorrow} = avgTemperatures;
+
+    return tempOfTomorrow;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //DESTRUCTURING ASSIGNMENT WITH NESTED OBJECTS
+
+const LOCAL_FORECAST = {today: {min: 72, max: 83}, tomorrow: {min: 73.3, max: 84.6}};
+
+function getMaxOfTmrw(forecast){
+    "use strict";
+
+    const {tomorrow: {max: maxOfTomorrow}} = forecast;
+
+    return maxOfTomorrow;
+}
+
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE DESTRUCTURING ASSIGNMENT TO ASSIGN VARIABLES FROM ARRAYS
+    
+const [q, w, , e] = [1, 2, 3, 4, 5, 6, 7]; //just use comma and an empty space to target and assign a value with a variable in an array
+
+console.log(q, w, e);  //output is 1 2 4
+
+let tokyo = 888, korea = 777;
+(() => {
+    "use strict";
+    [tokyo, korea] = [korea, tokyo] //switched the places of their values
+
+})();
+
+console.log(tokyo);
+console.log(korea);
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE DESTRUCTURING ASSIGNMENT WITH THE REST OPERATOR
+
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function removeFirstTwo(list){
+
+    const [ , , ...arr] = list;
+
+    return arr;
+}
+
+const arr = removeFirstTwo(source);
+
+console.log(arr);
+console.log(source);
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE DESTRUCTURING ASSIGNMENT TO PASS AN OBJECT AS A FUNCITON'S PARAMETERS
+
+// const stats = {
+//     max: 56.78,
+//     standard_deviation: 4.34,
+//     median: 34.54,
+//     mode: 23.87,
+//     min: -0.75,
+//     average: 35.85
+// };
+
+// const half = (function() {
+
+//     return function half(stats){
+//         return (stats.max + stats.min) / 2.0;
+//     }
+// })();
+
+// console.log(stats);
+// console.log(half(stats));        //SAME AS BELOW
+
+const stats = {                    //SAME AS ABOVE
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
+};
+
+const half = (function() {
+
+    return function half({max, min}){  //COMMONLY USED IN API, and can use destructuring to get it down to only what we want to work with
+        return (max + min) / 2.0;
+    }
+})();
+
+console.log(stats);
+console.log(half(stats));
