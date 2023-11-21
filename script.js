@@ -1268,6 +1268,33 @@ const magic = () => new Date(); //SAME AS ABOVE
 
 
 
-var myConcat = (arr1, arr2) => arr1.concat(arr2);  //concat is for merging 2 or more arrays 
+const myConcat = (arr1, arr2) => arr1.concat(arr2);  //concat is for merging 2 or more arrays 
                                                    //SAME AS ABOVE
 console.log(myConcat([1, 2], [3, 4, 5]));
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //WRITE HIGHER ORDER ARROW FUNCTIONS
+
+const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+const squareList = (arr) => {
+    const squaredIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * x);
+    return squaredIntegers;
+};
+
+const squaredIntegers = squareList(realNumberArray);
+console.log(squaredIntegers);
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //WRITE HIGHER ORDER ARROW FUNCTIONS
+
+const increment = (function(){
+    return function increment(number, value = 0) {
+        return number + value;
+    }
+})();
+
+console.log(increment(5,2));
+console.log(increment(5));
