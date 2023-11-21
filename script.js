@@ -1188,3 +1188,86 @@ console.log(printManyTimes2("freeCodeCamp"));
 
 //another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+            //MUTATE AN ARRAY DECLARED WITH CONST
+
+// const z = [5, 7, 2];
+
+// function editInPlace(){
+//     "use strict";
+
+//     z = [2, 5, 7];  //ERROR BECAUSE z IS DECLARED TWICE
+
+//     return z;
+// }   
+
+// console.log(editInPlace());
+
+
+//BUT CAN BE FIXED WITH BRACKET NOTATION
+const s = [5, 7, 2];
+
+function editInPlace2(){
+    "use strict";
+
+    s[0]=2;
+    s[1]=5;
+    s[2]=7;
+
+    return s;
+
+}
+
+console.log(editInPlace2());
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //PREVENT OBJECT MUTATION
+
+function freezeObj(){
+    "use strict";
+
+    const MATH_CONSTANTS = {
+        PI:3.14   //AN OBJECT
+    };
+
+    Object.freeze(MATH_CONSTANTS); //Object.freeze makes the MATH_CONSTANTS to not change 
+                                   //WITHOUT Object.freeze the OUTPUT is 99
+
+    try{
+        MATH_CONSTANTS.PI = 99;
+    } catch( ex ) {  //catch(ex) is for IF THERE'S AN ERROR
+        console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj();
+
+console.log(PI);
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE ARROW FUNCTIONS TO WRITE CONCISE ANONYMOUS FUNCTIONS
+
+// var magic = function(){      //SAME AS BELOW
+//     return new Date();   
+// }
+
+
+
+const magic = () => new Date(); //SAME AS ABOVE
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            //WRITE ARROW FUNCTIONS WITH PARAMETERS
+
+// var myConcat = function(arr1, arr2){
+//     return arr1.concat(arr2);  //concat is for merging 2 or more arrays
+// }                                               //SAME AS BELOW
+
+
+
+var myConcat = (arr1, arr2) => arr1.concat(arr2);  //concat is for merging 2 or more arrays 
+                                                   //SAME AS ABOVE
+console.log(myConcat([1, 2], [3, 4, 5]));
