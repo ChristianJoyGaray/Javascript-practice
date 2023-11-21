@@ -1042,7 +1042,7 @@ console.log(convertToInteger("88"))
 function convertToInteger232(str){
     
     return parseInt(str, 2); //convert the string 1001010 binary number to whole number
-}
+}  // the , 2 is for the length of the output which is currently 74
 
 console.log(convertToInteger232("1001010"))
 
