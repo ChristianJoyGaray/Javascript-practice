@@ -1617,3 +1617,11 @@ thermos.temperature = 26;
 temp = thermos.temperature;
 
 console.log(temp);
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //UNDERSTAND THE DIFFERENCES BETWEEN IMPORT AND REQUIRE(EXPORT)
+
+const cap = capitalizeString("hello!");
+
+console.log(cap);
