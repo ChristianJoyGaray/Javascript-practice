@@ -1504,3 +1504,37 @@ console.log(resultDisplayArray);
 
 //another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+            //WRITE CONCISE OBJECT LITERAL DECLARATIONS USING SIMPLE FIELDS
+
+const createPerson = (name, age, gender) => ({ name, age, gender }) //SAME AS BELOW
+
+//     return {                                                     //SAME AS ABOVE
+//         name: name,
+//         age: age,
+//         gender: gender
+//     };
+// };
+
+console.log(createPerson("Zodiac Hasbro", 56, "male"));
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //WRITE CONCISE DECLARATIVE FUNCTIONS
+
+const bicycle = {
+    gear: 2,
+    // setGear: function(newGear){          //SAME AS BELOW
+    //     "use strict"
+    //     this.gear = newGear;
+    // }
+    setGear(newGear){                       //SAME AS ABOVE
+        "use strict"
+        this.gear = newGear;
+    }
+};
+
+bicycle.setGear(6);
+console.log(bicycle.gear);
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
