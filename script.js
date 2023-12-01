@@ -1611,7 +1611,9 @@ function makeClass2(){
 }
 
 const Thermostat = makeClass2();
-const thermos = new Thermostat(76);
+const thermos = new Thermostat(90);
 let temp = thermos.temperature;
 thermos.temperature = 26;
 temp = thermos.temperature;
+
+console.log(temp);
