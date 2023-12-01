@@ -1578,3 +1578,21 @@ console.log(carrot.name);
 //another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             //USE GETTERS AND SETTERS TO CONTROL ACCESS TO AN OBJECT
+
+class Book{
+    constructor(author){
+        this._author = author;
+    }
+
+    get writer(){
+        return this._author;
+    }
+
+    set writer(updatedAuthor){
+        this._author = updatedAuthor;
+    }
+}
+
+function makeClass(){
+    return thermostat;
+}
