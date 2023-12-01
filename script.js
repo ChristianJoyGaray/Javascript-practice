@@ -1617,3 +1617,10 @@ thermos.temperature = 26;
 temp = thermos.temperature;
 
 console.log(temp);
+
+
+
+
+
+
+//EXAMPLES FOR IMPORTING AND EXPORTING INSERTED HERE, PROBLEM WITH DISPLAYING THAT IS WHY THEY ARE IN A DIFFERENT FILE
