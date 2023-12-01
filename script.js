@@ -23,7 +23,7 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
 
 console.log(wordBlanks("dog","big","ran","quickly"))
 
- function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+ function wordBlanks2(myNoun, myAdjective, myVerb, myAdverb){
     var result="";
 
     result+= "The " + myAdjective + " " + myNoun + " " + myVerb + " in the store " + myAdverb + ".";
@@ -31,7 +31,7 @@ console.log(wordBlanks("dog","big","ran","quickly"))
     return result;
 }
 
-console.log(wordBlanks("pussy","juicy","got cream pied","professionally"))
+console.log(wordBlanks2("pussy","juicy","got cream pied","professionally"))
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -379,7 +379,7 @@ console.log(caseInSwitch("nigga"))
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function caseInSwitch(val){
+function caseInSwitch2(val){
     var answer = ""
     switch(val){
         case "nigga": 
@@ -402,7 +402,7 @@ function caseInSwitch(val){
     return answer;
 }
 
-console.log(caseInSwitch("fucker"))
+console.log(caseInSwitch2("fucker"))
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -1617,13 +1617,3 @@ thermos.temperature = 26;
 temp = thermos.temperature;
 
 console.log(temp);
-
-//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-            //UNDERSTAND THE DIFFERENCES BETWEEN IMPORT AND REQUIRE(EXPORT)
-
-import { capitalizeString } from "./script_function";
-
-const cap = capitalizeString("hello!");
-
-console.log(cap);
