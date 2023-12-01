@@ -1540,3 +1540,24 @@ console.log(bicycle.gear);
 
             //USE CLASS SYNTAX TO DEFINE A CONSTRUCTOR FUNCTION
 
+// var spaceShuttle = function(targetPlanet){
+//     this.targetPlanet = targetPlanet;
+// }
+
+// var odin = new spaceShuttle('Jupiter');
+
+// console.log(odin.targetPlanet)                   //SAME AS BELOW
+
+
+
+class spaceShuttle {                       //USE CLASS SYNTAX
+    constructor (targetPlanet){          //SAME AS ABOVE
+    this.targetPlanet = targetPlanet;
+}}
+
+var odin = new spaceShuttle('Jupiter');
+
+console.log(odin.targetPlanet)
+
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
