@@ -1574,3 +1574,7 @@ function makeClass(){
 const vegetable = makeClass();
 const carrot = new vegetable('carrot');
 console.log(carrot.name);
+
+//another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE GETTERS AND SETTERS TO CONTROL ACCESS TO AN OBJECT
