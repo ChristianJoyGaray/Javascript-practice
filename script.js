@@ -1533,8 +1533,10 @@ const bicycle = {
     }
 };
 
-bicycle.setGear(6);
+bicycle.setGear(5);
 console.log(bicycle.gear);
 
 //another example////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //USE CLASS SYNTAX TO DEFINE A CONSTRUCTOR FUNCTION
 
