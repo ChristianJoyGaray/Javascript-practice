@@ -1622,6 +1622,8 @@ console.log(temp);
 
             //UNDERSTAND THE DIFFERENCES BETWEEN IMPORT AND REQUIRE(EXPORT)
 
+import { capitalizeString } from "./script_function";
+
 const cap = capitalizeString("hello!");
 
 console.log(cap);
