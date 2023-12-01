@@ -1598,7 +1598,7 @@ class Book{
 function makeClass2(){
     class Thermostat{
         constructor(temp){
-            this._temp = 5/9 (temp - 32);
+            this._temp = 5/9 * (temp - 32);
         }
         get temperature(){
             return this._temp;
